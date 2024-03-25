@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>第一篇文章 | Weirou's Blog</title><meta name="author" content="Weirou Sun"><meta name="copyright" content="Weirou Sun"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="技術文件撰寫須知  🧑🏻‍💻 * 主題描述請精簡扼要 * 每一篇技術文件以探討一個單位主題為主，每一份文件必須明確指出一個要解決的問題。 * 例如某些教學項目同時涉及到多個單元，那請根據不同單元，分別寫在不同的文件當中。 * 以下每一個項目為必填的內容 * 如需要進行一些 Feedback 可填寫到上方的 comment 進行交流 * 如有問題，可反饋或詢問 Marcus     What">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一篇文章">
+<meta property="og:url" content="http://example.com/di-yi-pian-wen-zhang/">
+<meta property="og:site_name" content="Weirou&#39;s Blog">
+<meta property="og:description" content="技術文件撰寫須知  🧑🏻‍💻 * 主題描述請精簡扼要 * 每一篇技術文件以探討一個單位主題為主，每一份文件必須明確指出一個要解決的問題。 * 例如某些教學項目同時涉及到多個單元，那請根據不同單元，分別寫在不同的文件當中。 * 以下每一個項目為必填的內容 * 如需要進行一些 Feedback 可填寫到上方的 comment 進行交流 * 如有問題，可反饋或詢問 Marcus     What">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-03-20T09:07:43.000Z">
+<meta property="article:modified_time" content="2024-03-25T12:41:44.804Z">
+<meta property="article:author" content="Weirou Sun">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/di-yi-pian-wen-zhang/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '第一篇文章',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-25 20:41:44'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Weirou's Blog"><span class="site-name">Weirou's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">第一篇文章</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2024-03-20T09:07:43.000Z" title="發表於 2024-03-20 17:07:43">2024-03-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2024-03-25T12:41:44.804Z" title="更新於 2024-03-25 20:41:44">2024-03-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="第一篇文章"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="技術文件撰寫須知"><a href="#技術文件撰寫須知" class="headerlink" title="技術文件撰寫須知"></a>技術文件撰寫須知</h3><hr>
+<aside>
+🧑🏻‍💻 * 主題描述請精簡扼要
+* 每一篇技術文件以探討一個單位主題為主，每一份文件必須明確指出一個要解決的問題。
+* 例如某些教學項目同時涉及到多個單元，那請根據不同單元，分別寫在不同的文件當中。
+* 以下每一個項目為必填的內容
+* 如需要進行一些 Feedback 可填寫到上方的 comment 進行交流
+* 如有問題，可反饋或詢問 Marcus
+
+</aside>
+
+<ul>
+<li><p>What (這篇技術文件主要想要給團隊帶來什麼資訊)</p>
+<p>  教學如何安裝以及使用Poetry</p>
+</li>
+<li><p>Where (在什麼地方可能會使用到這篇技術文件，請實際列出一個實體)</p>
+<p>  Python </p>
+</li>
+<li><p>Who (列舉有哪一些腳色可能會使用到)</p>
+<p>  後端開發者，雲端管理者等</p>
+</li>
+<li><p>When (在什麼樣的情境下會使用到這篇文章，通常描述為一個時機點)</p>
+<p>  當要打包python檔案及其使用套件時</p>
+</li>
+<li><h2 id="How-以下請針對主題詳細描述如何處理，圖文並茂-環境部屬-1-安裝Poetry的兩種方式-2-設定PATH-3-初始化-Poetry-專案-4-管理-Poetry-虛擬環境-5-修改config，建立專案內的-venv虛擬環境-6-以指令建立虛擬環境-7-啟動與退出虛擬環境-常用指令教學-1-Poetry-新增套件-2-列出全部套件清單-3-Poetry-移除套件-4-輸出-Poetry-虛擬環境的-requirements-txt-Poetry-常用指令清單-在別台主機上重現專案的-Poetry-虛擬環境-在已有環境下快速建立新環境-可能遇到問題-1-Docker建立映像檔，-CalledProcessError"><a href="#How-以下請針對主題詳細描述如何處理，圖文並茂-環境部屬-1-安裝Poetry的兩種方式-2-設定PATH-3-初始化-Poetry-專案-4-管理-Poetry-虛擬環境-5-修改config，建立專案內的-venv虛擬環境-6-以指令建立虛擬環境-7-啟動與退出虛擬環境-常用指令教學-1-Poetry-新增套件-2-列出全部套件清單-3-Poetry-移除套件-4-輸出-Poetry-虛擬環境的-requirements-txt-Poetry-常用指令清單-在別台主機上重現專案的-Poetry-虛擬環境-在已有環境下快速建立新環境-可能遇到問題-1-Docker建立映像檔，-CalledProcessError" class="headerlink" title="How (以下請針對主題詳細描述如何處理，圖文並茂)  - 環境部屬      1. 安裝Poetry的兩種方式      2. 設定PATH      3. 初始化 Poetry 專案      4. 管理 Poetry 虛擬環境      5. 修改config，建立專案內的.venv虛擬環境      6. 以指令建立虛擬環境      7. 啟動與退出虛擬環境  - 常用指令教學      1. Poetry 新增套件      2. 列出全部套件清單      3. Poetry 移除套件      4. 輸出 Poetry 虛擬環境的 requirements.txt  - Poetry 常用指令清單  - 在別台主機上重現專案的 Poetry 虛擬環境  - 在已有環境下快速建立新環境  - 可能遇到問題      1. Docker建立映像檔，[CalledProcessError]
+  "></a>How (以下請針對主題詳細描述如何處理，圖文並茂)<br><br><br>  - <a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">環境部屬</a><br>      1. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">安裝Poetry的兩種方式</a></strong><br>      2. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">設定PATH</a></strong><br>      3. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">初始化 Poetry 專案</a></strong><br>      4. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">管理 Poetry 虛擬環境</a></strong><br>      5. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">修改<code>config</code>，建立專案內的<code>.venv</code>虛擬環境</a></strong><br>      6. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">以指令建立虛擬環境</a></strong><br>      7. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">啟動與退出虛擬環境</a></strong><br>  - <a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">常用指令教學</a><br>      1. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">Poetry 新增套件</a></strong><br>      2. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">列出全部套件清單</a></strong><br>      3. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">Poetry 移除套件</a></strong><br>      4. <strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">輸出 Poetry 虛擬環境的 requirements.txt</a></strong><br>  - <a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">Poetry 常用指令清單</a><br>  - <a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">在別台主機上重現專案的 Poetry 虛擬環境</a><br>  - <a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">在已有環境下快速建立新環境</a><br>  - <a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">可能遇到問題</a><br>      1. <a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">Docker建立映像檔，[CalledProcessError]</a>
+  </h2><h1 id="環境部屬-to-the-top"><a href="#環境部屬-to-the-top" class="headerlink" title="環境部屬**(to the top)**"></a>環境部屬**<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a>**</h1><ol>
+<li><p><strong>安裝Poetry的兩種方式</strong><a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a> </p>
+<ol>
+<li><p><strong>pip 安裝</strong>至專案使用的 Python（虛擬）環境，即**<code>pip install poetry</code>**。</p>
+</li>
+<li><p><strong>全域安裝</strong>至使用者的家目錄。</p>
+<p> (官方較推薦。pip安裝是直接安裝到專案所屬的Python虛擬環境，而 Poetry 所依賴的套件非常多，<strong>總計超過 30 個，會嚴重影響專案虛擬環境的整潔度</strong>。)</p>
+<p> <strong>因此以全域安裝方式教學</strong></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://install.python-poetry.org | python3 -</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -</span><br></pre></td></tr></table></figure>
+<p> Poetry 實際安裝路徑如下：</p>
+<ul>
+<li><strong><code>$HOME/.local/bin</code></strong> for Unix</li>
+<li><strong><code>%APPDATA%\Python\Scripts</code></strong> on Windows <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/13184414/how-can-i-get-the-path-to-the-appdata-directory-in-python">(不知道%APPDATA%位置可參考…)</a></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p><strong>設定PATH<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#for windows 設定環境變數, 底下路徑請先找出上述的實際安裝路徑</span></span><br><span class="line">setx path <span class="string">&quot;%PATH%;C:\Users\Irene\AppData\Roaming\Python\Scripts&quot;</span></span><br><span class="line">setx path <span class="string">&quot;%PATH%;C:\Users\marcus\AppData\Roaming\Python\Scripts&quot;</span></span><br></pre></td></tr></table></figure>
+<p> 存檔後重啟 shell 即可使用。直接在命令列打上**<code>poetry</code>**指令測試：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; poetry</span><br><span class="line">Poetry (version 1.2.2)</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  <span class="built_in">command</span> [options] [arguments]</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>初始化 Poetry 專案<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<ol>
+<li><p>先建立一個全新的專案，名為**<code>poetry-demo</code>**。</p>
+<p> 就像 git 專案需要初始化，Poetry 也需要，因為每一個使用了 Poetry 的專案中一定要有一個**<code>pyproject.toml</code><strong>作為它的</strong>設定檔**。</p>
+<p> 所以一定先初始化，使用**<code>poetry init</code>**：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> poetry-demo</span><br><span class="line"><span class="built_in">cd</span> poetry-demo</span><br><span class="line">poetry init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>此時會跳出一連串的互動對話，協助你建立專案的資料，大部分可以直接**<code>enter</code>**跳過：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">This <span class="built_in">command</span> will guide you through creating your pyproject.toml config.</span><br><span class="line"></span><br><span class="line">Package name [poetry-demo]:</span><br><span class="line">Version [0.1.0]:</span><br><span class="line">Description []:</span><br><span class="line">Author [kyo &lt;odinxp@gmail.com&gt;, n to skip]:</span><br><span class="line">License []:</span><br><span class="line">Compatible Python versions [^3.8]:</span><br><span class="line"></span><br><span class="line">Would you like to define your main dependencies interactively? (<span class="built_in">yes</span>/no) [<span class="built_in">yes</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>直到出現「**<code>Would you like to define your main dependencies interactively? (yes/no) [yes]</code><strong>」，之後則接著選擇「</strong>no**」：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Would you like to define your main dependencies interactively? (<span class="built_in">yes</span>/no) [<span class="built_in">yes</span>] no</span><br><span class="line">Would you like to define your development dependencies interactively? (<span class="built_in">yes</span>/no) [<span class="built_in">yes</span>] no</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最後會讓你確認本次產生的**<code>toml</code>**檔內容：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[tool.poetry]</span><br><span class="line">name = <span class="string">&quot;poetry-demo&quot;</span></span><br><span class="line">version = <span class="string">&quot;0.1.0&quot;</span></span><br><span class="line">description = <span class="string">&quot;&quot;</span></span><br><span class="line">authors = [<span class="string">&quot;Irene &lt;www28385374@gmail.com&gt;&quot;</span>]</span><br><span class="line">readme = <span class="string">&quot;README.md&quot;</span></span><br><span class="line">packages = [&#123;include = <span class="string">&quot;poetry_demo&quot;</span>&#125;]</span><br><span class="line"></span><br><span class="line">[tool.poetry.dependencies]</span><br><span class="line">python = <span class="string">&quot;^3.9&quot;</span></span><br><span class="line"></span><br><span class="line">[build-system]</span><br><span class="line">requires = [<span class="string">&quot;poetry-core&quot;</span>]</span><br><span class="line">build-backend = <span class="string">&quot;poetry.core.masonry.api&quot;</span></span><br><span class="line"></span><br><span class="line">Do you confirm generation? (<span class="built_in">yes</span>/no) [<span class="built_in">yes</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>並詢問你「**<code>Do you confirm generation? (yes/no) [yes]</code><strong>」，按</strong><code>enter</code><strong>使用預設選項「yes」或直接回答「yes」，則</strong><code>pyproject.toml</code>**建立完成。</p>
+<p> 此時專案目錄結構如下：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">poetry-demo</span><br><span class="line">└── pyproject.toml</span><br><span class="line"></span><br><span class="line">0 directories, 1 file</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p><strong>管理 Poetry 虛擬環境<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<p> Poetry 預設上（可透過**<code>poetry config</code><strong>修改）會強制套件都要安裝在虛擬環境中，以免污染全域，所以它整合了</strong><code>virtualenv</code>**。</p>
+<p> 所以在執行**<code>poetry add、install</code><strong>等指令時，Poetry 都會自動檢查</strong>當下是否正在使用虛擬環境：**</p>
+<ul>
+<li>如果<strong>是</strong>，則會直接安裝套件至<strong>當前</strong>的虛擬環境。</li>
+<li>如果<strong>否</strong>，則會自動幫你建立一個<strong>新的</strong>虛擬環境，再進行套件安裝。</li>
+</ul>
+</li>
+<li><p><strong>修改<code>config</code>，建立專案內的<code>.venv</code>虛擬環境<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<p> 我們先使用**<code>poetry config</code><strong>指令來查看 Poetry 目前幾個主要的設定，需要</strong><code>--list</code>**這個參數：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">❯ poetry config --list</span><br><span class="line">cache-dir = <span class="string">&quot;/Users/kyo/Library/Caches/pypoetry&quot;</span></span><br><span class="line">experimental.new-installer = <span class="literal">true</span></span><br><span class="line">installer.parallel = <span class="literal">true</span></span><br><span class="line">virtualenvs.create = <span class="literal">true</span></span><br><span class="line">virtualenvs.in-project = <span class="literal">false</span></span><br><span class="line">virtualenvs.path = <span class="string">&quot;&#123;cache-dir&#125;/virtualenvs&quot;</span></span><br></pre></td></tr></table></figure>
+<p> 其中**<code>virtualenvs.create = true</code><strong>若改成</strong><code>false</code>**，則可以停止 Poetry 在「偵測不到虛擬環境時會自行建立」的行為模式，但建議還是不要更動。</p>
+<p> 而**<code>virtualenvs.in-project = false</code>**就是我們要修改的目標，使用指令：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry config virtualenvs.in-project <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>以指令建立虛擬環境<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">❯ poetry <span class="built_in">env</span> use python</span><br><span class="line">Creating virtualenv poetry-demo <span class="keyword">in</span> /Users/kyo/Documents/code/poetry-demo/.venv</span><br><span class="line">Using virtualenv: /Users/kyo/Documents/code/poetry-demo/.venv</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>啟動與退出虛擬環境<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<p> 啟動虛擬環境，需移至專案目錄底下，使用指令**<code>poetry shell</code>**：</p>
+<p> **<code>poetry shell</code><strong>指令會偵測當前目錄或所屬上層目錄是否存在</strong><code>pyproject.toml</code>**來確定所要啟動的虛擬環境，所以如果不移至專案目錄，則會出現下列錯誤：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">❯ poetry shell</span><br><span class="line"></span><br><span class="line">  RuntimeError</span><br><span class="line"></span><br><span class="line">  Poetry could not find a pyproject.toml file <span class="keyword">in</span> /Users/kyo/Documents/code or its parents</span><br><span class="line"></span><br><span class="line">  at ~/Library/Application Support/pypoetry/venv/lib/python3.8/site-packages/poetry/core/factory.py:369 <span class="keyword">in</span> locate</span><br><span class="line">      365│             <span class="keyword">if</span> poetry_file.exists():</span><br><span class="line">      366│                 <span class="built_in">return</span> poetry_file</span><br><span class="line">      367│</span><br><span class="line">      368│         <span class="keyword">else</span>:</span><br><span class="line">    → 369│             raise RuntimeError(</span><br><span class="line">      370│                 <span class="string">&quot;Poetry could not find a pyproject.toml file in &#123;&#125; or its parents&quot;</span>.format(</span><br><span class="line">      371│                     cwd</span><br><span class="line">      372│                 )</span><br><span class="line">      373│             )</span><br></pre></td></tr></table></figure>
+<p> 退出就簡單多了，只需要**<code>exit</code>**即可。</p>
+</li>
+</ol>
+<hr>
+<h1 id="常用指令-to-the-top"><a href="#常用指令-to-the-top" class="headerlink" title="常用指令**(to the top)**"></a>常用指令**<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a>**</h1><ol>
+<li><p><strong>Poetry 新增套件<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<ol>
+<li><p><strong>新增套件</strong></p>
+<p> 使用指令：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry add</span><br></pre></td></tr></table></figure>
+<p> 相當於**<code>pip install</code>**，我們來試著安裝 Flask 看看會有什麼變化：</p>
+<p> <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8396d7fc-0ee7-4275-9aa5-d87a13847baf/Untitled.png" alt="Untitled"></p>
+<p> 圖中可以看出 Poetry 漂亮的命令列資訊呈現，會清楚告知總共新增了幾個套件。</p>
+<p> 此時專案中的**<code>pyproject.toml</code>**也會發生變化：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">[tool.poetry.dependencies]</span><br><span class="line">python = <span class="string">&quot;^3.8&quot;</span></span><br><span class="line">Flask = <span class="string">&quot;^2.1.1&quot;</span>  <span class="comment"># 新增部分</span></span><br><span class="line"></span><br><span class="line">[tool.poetry.dev-dependencies]</span><br><span class="line"></span><br><span class="line">[build-system]</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p> ⚠️這裡要說明，安裝 Flask，則**<code>pyproject.toml</code><strong>就只會新增記載</strong><code>Flask = &quot;^2.1.1&quot;</code><strong>這個 <strong>top-level</strong> 的 package 項目，其餘的依賴套件</strong>不會<strong>直接記錄在</strong><code>toml</code>**檔中。</p>
+<p> 方便區分哪些是你<strong>主動安裝</strong>的主要套件，而哪些又是基於套件的依賴關係而一併安裝的依賴套件。</p>
+</li>
+<li><p><strong>poetry.lock 與更新順序</strong></p>
+<p> 除了更新**<code>pyproject.toml</code><strong>，此時專案中還會新增一個檔案，名為</strong><code>poetry.lock</code><strong>，它實際上就相當於 pip 的</strong><code>requirements.txt</code>**，詳細記載了所有安裝的套件與版本。</p>
+<p> 當你使用**<code>poetry add</code><strong>指令時，Poetry 會</strong>自動依序**幫你做完這三件事：</p>
+<ol>
+<li>更新**<code>pyproject.toml</code>**。</li>
+<li>依照**<code>pyproject.toml</code><strong>的內容，更新</strong><code>poetry.lock</code>**。</li>
+<li>依照**<code>poetry.lock</code>**的內容，更新虛擬環境。</li>
+</ol>
+<p> 由此可見，**<code>poetry.lock</code><strong>的內容是取決於</strong><code>pyproject.toml</code><strong>，但兩者並不會自己連動，一定要基於特定指令才會進行同步與更新，</strong><code>poetry add</code>**就是一個典型案例。</p>
+<p> 此時專案目錄結構如下：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">poetry-demo</span><br><span class="line">├── poetry.lock</span><br><span class="line">└── pyproject.toml</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>更新 poetry.lock</strong></p>
+<p> 當你自行修改了**<code>pyproject.toml</code><strong>內容，比如變更特定套件的版本（這是有可能的，尤其在手動處理版本衝突的時候），此時</strong><code>poetry.lock</code><strong>的內容與</strong><code>pyproject.toml</code><strong>出現了「</strong>脫鉤<strong>」，必須讓它依照新的</strong><code>pyproject.toml</code>**內容更新、同步，使用指令：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry lock</span><br></pre></td></tr></table></figure>
+<p> 如此一來，才能確保手動修改的內容，也更新到**<code>poetry.lock</code><strong>中，畢竟虛擬環境如果要重新建立，是基於</strong><code>poetry.lock</code><strong>的內容來安裝套件，而非</strong><code>pyproject.toml</code>**。</p>
+<p> 還是那句話：**<code>poetry.lock</code><strong>相當於 Poetry 的</strong><code>requirements.txt</code>**。</p>
+</li>
+<li><p><strong>安裝套件至 dev-dependencies</strong></p>
+<p> 有些套件，比如**<code>pytest</code><strong>、</strong><code>flake8</code><strong>等等，</strong>只會在開發環境中使用<strong>，產品的</strong>部署環境**並不需要。</p>
+<p> Poetry 允許你<strong>區分</strong>這兩者，將上述的套件安裝至**<code>dev-dependencies</code><strong>區塊，方便讓你</strong>輕鬆建立一份「不包含」<code>dev-dependencies</code>開發套件的安裝清單**。</p>
+<p> 在此以 Black 為例，安裝方式如下：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry add black -D</span><br></pre></td></tr></table></figure>
+<p> 或</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry add black --dev</span><br></pre></td></tr></table></figure>
+<p> 結果的區別顯示在**<code>pyproject.toml</code>**裡：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[tool.poetry.dependencies]</span><br><span class="line">python = <span class="string">&quot;^3.8&quot;</span></span><br><span class="line">Flask = <span class="string">&quot;^2.1.1&quot;</span></span><br><span class="line"></span><br><span class="line">[tool.poetry.dev-dependencies]</span><br><span class="line">black = <span class="string">&quot;^22.3.0&quot;</span></span><br></pre></td></tr></table></figure>
+<p> 可以看到**<code>black</code><strong>被列在不同區塊：</strong><code>tool.poetry.dev-dependencies</code>**。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>列出全部套件清單<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<ol>
+<li><p><strong>列出全部套件清單</strong></p>
+<p> 類似**<code>pip list</code><strong>，這裡要使用</strong><code>poetry show</code>**：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt; poetry show</span><br><span class="line">click              8.1.3  Composable <span class="built_in">command</span> line interface toolkit</span><br><span class="line">colorama           0.4.6  Cross-platform colored terminal text.</span><br><span class="line">flask              2.2.2  A simple framework <span class="keyword">for</span> building complex web applications.</span><br><span class="line">importlib-metadata 5.0.0  Read metadata from Python packages</span><br><span class="line">itsdangerous       2.1.2  Safely pass data to untrusted environments and back.</span><br><span class="line">jinja2             3.1.2  A very fast and expressive template engine.</span><br><span class="line">markupsafe         2.1.1  Safely add untrusted strings to HTML/XML markup.</span><br><span class="line">werkzeug           2.2.2  The comprehensive WSGI web application library.</span><br><span class="line">zipp               3.10.0 Backport of pathlib-compatible object wrapper <span class="keyword">for</span> zip files</span><br></pre></td></tr></table></figure>
+<p> ⚠️特別提醒的是，這裡的清單內容<strong>並不是來自於虛擬環境</strong>，這點和 pip 不同，而是來自於**<code>poetry.lock</code>**的內容。</p>
+</li>
+<li><p><strong>「樹狀」顯示套件依賴層級</strong></p>
+<p> Poetry 最為人津津樂道的就是它的樹狀顯示——**<code>poetry show --tree</code>**。</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; poetry show --tree</span><br><span class="line">flask 2.2.2 A simple framework <span class="keyword">for</span> building complex web applications.</span><br><span class="line">├── click &gt;=8.0</span><br><span class="line">│   └── colorama *</span><br><span class="line">├── importlib-metadata &gt;=3.6.0</span><br><span class="line">│   └── zipp &gt;=0.5</span><br><span class="line">├── itsdangerous &gt;=2.0</span><br><span class="line">├── jinja2 &gt;=3.0</span><br><span class="line">│   └── markupsafe &gt;=2.0</span><br><span class="line">└── werkzeug &gt;=2.2.2</span><br><span class="line">    └── markupsafe &gt;=2.1.1</span><br></pre></td></tr></table></figure>
+<p> 讓主要套件與其依賴套件的<strong>關係與層次，一目了然</strong>。</p>
+<p> 而且很貼心的是，它也可以<strong>只顯示「指定套件」</strong>的依賴層級，以**<code>celery</code>**為例：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">❯ poetry show celery --tree</span><br><span class="line">celery 4.4.0 Distributed Task Queue.</span><br><span class="line">├── billiard &gt;=3.6.1,&lt;4.0</span><br><span class="line">├── kombu &gt;=4.6.7,&lt;4.7</span><br><span class="line">│   ├── amqp &gt;=2.6.0,&lt;2.7</span><br><span class="line">│   │   └── vine &gt;=1.1.3,&lt;5.0.0a1</span><br><span class="line">│   └── importlib-metadata &gt;=0.18</span><br><span class="line">│       ├── typing-extensions &gt;=3.6.4</span><br><span class="line">│       └── zipp &gt;=0.5</span><br><span class="line">├── pytz &gt;0.0-dev</span><br><span class="line">└── vine 1.3.0</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p><strong>Poetry 移除套件<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<p> 使用**<code>poetry remove</code><strong>指令。和</strong><code>poetry add</code><strong>一樣，可以加上</strong><code>-D</code>**參數來移除置於開發區的套件。</p>
+<p> 而移除套件時的「<strong>依賴解析（相依性管理）</strong>」能力，正是 Poetry 遠優於 pip 的主要環節，因為 pip 沒有嘛！也是我提議改用 Poetry 的關鍵理由——<strong>為了順利移除套件</strong>。</p>
+<p> 前面已經提過，pip 的**<code>pip uninstall</code>**只會移除你所指定的套件，而不會連同依賴套件一起移除。</p>
+<p> 這是基於安全考量，因為 pip 沒有「依賴解析」功能。如果貿然移除所有「安裝時一併安裝」的依賴套件，可能會造成巨大災難，讓別的套件失去效用。</p>
+<p> 前面也舉了 Flask 和 Black 都共同依賴**<code>click</code><strong>這個套件的例子，在手動移除套件的情況下，你可能未曾注意 Black 也依賴了</strong><code>click</code><strong>，結果為了「徹底移除」Flask 的所有相關套件，不小心把</strong><code>click</code>**也移除掉了。</p>
+<p> 所以，使用 pip 時，我們鮮少會去移除已經不再使用的套件。畢竟<strong>依賴關係錯綜複雜</strong>，移除套件可能造成許多「<strong>副作用</strong>」，實在是太麻煩了。</p>
+<p> <strong><code>poetry remove</code>的依賴解析</strong></p>
+<p>  Poetry 會幫你處理這些棘手的「套件相依性」難題，讓你輕鬆移除 Flask 而不影響 Black：</p>
+<p> <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ed05b4a8-0360-461d-b2c6-aba53968ad4a/Untitled.png" alt="Untitled"></p>
+<p> 可以對比上面安裝 Flask 時的截圖，那時總共安裝了 8 個套件，但現在移除的卻只有 7 個——沒錯，因為有依賴解析，**Poetry 知道 Black 還需要<code>click</code>**！所以不能移除：</p>
+<p> 一個套件直到環境中的<strong>其餘套件都不再依賴它</strong>，Poetry 才會安心讓它被移除。</p>
+</li>
+<li><p><strong>輸出 Poetry 虛擬環境的 requirements.txt<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong> </p>
+<p> <strong>以下就是固定用來輸出<code>requirements.txt</code>的指令與參數：</strong></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry <span class="built_in">export</span> -f requirements.txt -o requirements.txt</span><br></pre></td></tr></table></figure>
+<p> <strong>輸出 dev-dependencies</strong></p>
+<p> 因為**<code>poetry export</code>預設<strong>只會輸出</strong><code>toml</code><strong>中的</strong><code>[tool.poetry.dependencies]</code><strong>區塊的套件！還記得上面我們把 Black 安裝到</strong><code>[tool.poetry.dev-dependencies]</code>**了嗎？</p>
+<p> 加上**<code>--dev</code>**參數即可：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry <span class="built_in">export</span> -f requirements.txt -o requirements.txt --with dev</span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<h1 id="Poetry-常用指令清單-to-the-top"><a href="#Poetry-常用指令清單-to-the-top" class="headerlink" title="Poetry 常用指令清單(to the top)"></a><strong>Poetry 常用指令清單<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong></h1><h2 id="Poetry-的常用指令主要有下面幾個：-poetry-add-poetry-remove-poetry-export-poetry-env-use-poetry-shell-poetry-show-poetry-init-poetry-install-poetry-update-package"><a href="#Poetry-的常用指令主要有下面幾個：-poetry-add-poetry-remove-poetry-export-poetry-env-use-poetry-shell-poetry-show-poetry-init-poetry-install-poetry-update-package" class="headerlink" title="  Poetry 的常用指令主要有下面幾個：  - poetry add  - poetry remove  - poetry export  - poetry env use  - poetry shell  - poetry show  - poetry init  - poetry install  - poetry update package
+  "></a>  Poetry 的常用指令主要有下面幾個：<br><br>  - <strong><code>poetry add</code></strong><br>  - <strong><code>poetry remove</code></strong><br>  - <strong><code>poetry export</code></strong><br>  - <strong><code>poetry env use</code></strong><br>  - <strong><code>poetry shell</code></strong><br>  - <strong><code>poetry show</code></strong><br>  - <strong><code>poetry init</code></strong><br>  - <strong><code>poetry install</code></strong><br>  - <strong><code>poetry update package</code></strong>
+  </h2><h1 id="在別台主機上重現專案的-Poetry-虛擬環境-to-the-top"><a href="#在別台主機上重現專案的-Poetry-虛擬環境-to-the-top" class="headerlink" title="在別台主機上重現專案的 Poetry 虛擬環境(to the top)"></a><strong>在別台主機上重現專案的 Poetry 虛擬環境<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a></strong></h1><h2 id="這也是非常常見的需求。-第一步當然是-git-clone專案，此時專案中已經有-Poetry-所需的必要資訊了——也就是pyproject-toml和poetry-lock-。-你還缺少的僅僅是虛擬環境。如果是全新的主機，則還得先安裝、設定好-Poetry。-確定-Poetry-可正常使用後，移至專案目錄底下，依序執行指令：-1-poetry-env-use-python：建立專案虛擬環境並使用。如果你懶得打這麼長的指令，直接poetry-shell也是可以。此時我們會有一個「空的」虛擬環境。-2-poetry-install：因為是舊專案，不需要init，會直接依poetry-lock記載的套件版本安裝到虛擬環境中！類似npm-install-。"><a href="#這也是非常常見的需求。-第一步當然是-git-clone專案，此時專案中已經有-Poetry-所需的必要資訊了——也就是pyproject-toml和poetry-lock-。-你還缺少的僅僅是虛擬環境。如果是全新的主機，則還得先安裝、設定好-Poetry。-確定-Poetry-可正常使用後，移至專案目錄底下，依序執行指令：-1-poetry-env-use-python：建立專案虛擬環境並使用。如果你懶得打這麼長的指令，直接poetry-shell也是可以。此時我們會有一個「空的」虛擬環境。-2-poetry-install：因為是舊專案，不需要init，會直接依poetry-lock記載的套件版本安裝到虛擬環境中！類似npm-install-。" class="headerlink" title="  這也是非常常見的需求。  第一步當然是**git clone專案，此時專案中已經有 Poetry 所需的必要資訊了——也就是pyproject.toml和poetry.lock**。  你還缺少的僅僅是虛擬環境。如果是全新的主機，則還得先安裝、設定好 Poetry。  確定 Poetry 可正常使用後，移至專案目錄底下，依序執行指令：  1. poetry env use python：建立專案虛擬環境並使用。如果你懶得打這麼長的指令，直接poetry shell也是可以。此時我們會有一個「空的」虛擬環境。  2. **poetry install：因為是舊專案，不需要init，會直接依poetry.lock記載的套件版本安裝到虛擬環境中！類似npm install**。
+  "></a>  這也是非常常見的需求。<br><br>  第一步當然是**<code>git clone</code><strong>專案，此時專案中已經有 Poetry 所需的必要資訊了——也就是</strong><code>pyproject.toml</code><strong>和</strong><code>poetry.lock</code>**。<br><br>  你還缺少的僅僅是虛擬環境。如果是全新的主機，則還得先安裝、設定好 Poetry。<br><br>  確定 Poetry 可正常使用後，移至專案目錄底下，依序執行指令：<br><br>  1. <strong><code>poetry env use python</code><strong>：建立專案虛擬環境並使用。如果你懶得打這麼長的指令，直接</strong><code>poetry shell</code><strong>也是可以。此時我們會有一個「</strong>空的</strong>」虛擬環境。<br>  2. **<code>poetry install</code><strong>：因為是舊專案，不需要</strong><code>init</code><strong>，會直接依</strong><code>poetry.lock</code><strong>記載的套件版本安裝到虛擬環境中！類似</strong><code>npm install</code>**。
+  </h2><h1 id="在已有環境下快速建立新環境-to-the-top"><a href="#在已有環境下快速建立新環境-to-the-top" class="headerlink" title="在已有環境下快速建立新環境**(to the top)**"></a>在已有環境下快速建立新環境**<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a>**</h1><ol>
+<li><p>建立並進入所需資料夾，利用指令**<code>poetry init</code> 將資料夾初始化。**</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder-name</span><br><span class="line"><span class="built_in">cd</span> folder-name</span><br><span class="line">poetry init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>此時會跳出一連串的互動對話，協助你建立專案的資料，大部分可以直接**<code>enter</code>**跳過。</p>
+<p> 直到出現「**<code>Would you like to define your main dependencies interactively? (yes/no) [yes]</code><strong>」，之後則接著選擇「</strong>no**」。</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">This <span class="built_in">command</span> will guide you through creating your pyproject.toml config.</span><br><span class="line"></span><br><span class="line">Package name [poetry-demo]:</span><br><span class="line">Version [0.1.0]:</span><br><span class="line">Description []:</span><br><span class="line">Author [kyo &lt;odinxp@gmail.com&gt;, n to skip]:</span><br><span class="line">License []:</span><br><span class="line">Compatible Python versions [^3.8]:</span><br><span class="line"></span><br><span class="line">Would you like to define your main dependencies interactively? (<span class="built_in">yes</span>/no) [no]</span><br><span class="line">Would you like to define your development dependencies interactively? (<span class="built_in">yes</span>/no) [no] </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最後會讓你確認本次產生的**<code>toml</code><strong>檔內容，並詢問你「</strong><code>Do you confirm generation? (yes/no) [yes]</code><strong>」，按</strong><code>enter</code><strong>使用預設選項「yes」或直接回答「yes」，則</strong><code>pyproject.toml</code>**建立完成。</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[tool.poetry]</span><br><span class="line">name = <span class="string">&quot;poetry-demo&quot;</span></span><br><span class="line">version = <span class="string">&quot;0.1.0&quot;</span></span><br><span class="line">description = <span class="string">&quot;&quot;</span></span><br><span class="line">authors = [<span class="string">&quot;Irene &lt;www28385374@gmail.com&gt;&quot;</span>]</span><br><span class="line">readme = <span class="string">&quot;README.md&quot;</span></span><br><span class="line">packages = [&#123;include = <span class="string">&quot;poetry_demo&quot;</span>&#125;]</span><br><span class="line"></span><br><span class="line">[tool.poetry.dependencies]</span><br><span class="line">python = <span class="string">&quot;^3.9&quot;</span></span><br><span class="line"></span><br><span class="line">[build-system]</span><br><span class="line">requires = [<span class="string">&quot;poetry-core&quot;</span>]</span><br><span class="line">build-backend = <span class="string">&quot;poetry.core.masonry.api&quot;</span></span><br><span class="line"></span><br><span class="line">Do you confirm generation? (<span class="built_in">yes</span>/no) [<span class="built_in">yes</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>啟動與退出虛擬環境。</p>
+<p> 啟動虛擬環境，需移至專案目錄底下，使用指令**<code>poetry shell</code>。**</p>
+<p> 退出只需要**<code>exit</code>**即可。</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; poetry shell</span><br><span class="line">Spawning shell within C:\Users\Irene\Desktop\python\API\converter\poetry-demo\.venv</span><br><span class="line">Windows PowerShell</span><br><span class="line">(poetry-demo-py3.9) PS C:\Users\Irene\Desktop\python\API\converter\poetry-demo&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>此時即可利用<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21"><strong>常用指令</strong></a>進行新增、移除等方法管理套件。</p>
+</li>
+</ol>
+<hr>
+<h1 id="可能遇到問題-to-the-top"><a href="#可能遇到問題-to-the-top" class="headerlink" title="可能遇到問題**(to the top)**"></a>可能遇到問題**<a target="_blank" rel="noopener" href="https://www.notion.so/Python-Poetry-7220c77360054984ba6c0b817aaadac2?pvs=21">(to the top)</a>**</h1><ol>
+<li><p><a target="_blank" rel="noopener" href="https://myoceane.fr/index.php/python-poetry/">Docker建立映像檔，[CalledProcessError]</a>:</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[CalledProcessError]</span><br><span class="line">Command <span class="string">&#x27;[&#x27;</span>/root/.cache/pypoetry/virtualenvs/annotation-6WcazSRI-py3.7/bin/python3<span class="string">&#x27;,&#x27;</span>-Im<span class="string">&#x27;,&#x27;</span>ensurepip<span class="string">&#x27;,&#x27;</span>--upgrade<span class="string">&#x27;]&#x27;</span> returned non-zero <span class="built_in">exit</span> status 1.</span><br><span class="line">The <span class="built_in">command</span> <span class="string">&#x27;/bin/sh -c poetry install&#x27;</span> returned a non-zero code:</span><br></pre></td></tr></table></figure>
+<p> 解決方法是<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/53835198/integrating-python-poetry-with-docker">參考</a>，增加一行指令在 Dockerfile 中取消使用 virtualenv：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry config virtualenvs.create <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ol>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://blog.kyomind.tw/python-poetry/#%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E4%BD%BF%E7%94%A8-Poetry">參考網址</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Weirou Sun</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章連結: </span><span class="post-copyright-info"><a href="http://example.com/di-yi-pian-wen-zhang/">http://example.com/di-yi-pian-wen-zhang/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版權聲明: </span><span class="post-copyright-info">本部落格所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。轉載請註明來自 <a href="http://example.com" target="_blank">Weirou's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Weirou Sun</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:www28385374@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%80%E8%A1%93%E6%96%87%E4%BB%B6%E6%92%B0%E5%AF%AB%E9%A0%88%E7%9F%A5"><span class="toc-number">1.</span> <span class="toc-text">技術文件撰寫須知</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-%E4%BB%A5%E4%B8%8B%E8%AB%8B%E9%87%9D%E5%B0%8D%E4%B8%BB%E9%A1%8C%E8%A9%B3%E7%B4%B0%E6%8F%8F%E8%BF%B0%E5%A6%82%E4%BD%95%E8%99%95%E7%90%86%EF%BC%8C%E5%9C%96%E6%96%87%E4%B8%A6%E8%8C%82-%E7%92%B0%E5%A2%83%E9%83%A8%E5%B1%AC-1-%E5%AE%89%E8%A3%9DPoetry%E7%9A%84%E5%85%A9%E7%A8%AE%E6%96%B9%E5%BC%8F-2-%E8%A8%AD%E5%AE%9APATH-3-%E5%88%9D%E5%A7%8B%E5%8C%96-Poetry-%E5%B0%88%E6%A1%88-4-%E7%AE%A1%E7%90%86-Poetry-%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-5-%E4%BF%AE%E6%94%B9config%EF%BC%8C%E5%BB%BA%E7%AB%8B%E5%B0%88%E6%A1%88%E5%85%A7%E7%9A%84-venv%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-6-%E4%BB%A5%E6%8C%87%E4%BB%A4%E5%BB%BA%E7%AB%8B%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-7-%E5%95%9F%E5%8B%95%E8%88%87%E9%80%80%E5%87%BA%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E6%95%99%E5%AD%B8-1-Poetry-%E6%96%B0%E5%A2%9E%E5%A5%97%E4%BB%B6-2-%E5%88%97%E5%87%BA%E5%85%A8%E9%83%A8%E5%A5%97%E4%BB%B6%E6%B8%85%E5%96%AE-3-Poetry-%E7%A7%BB%E9%99%A4%E5%A5%97%E4%BB%B6-4-%E8%BC%B8%E5%87%BA-Poetry-%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E7%9A%84-requirements-txt-Poetry-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E6%B8%85%E5%96%AE-%E5%9C%A8%E5%88%A5%E5%8F%B0%E4%B8%BB%E6%A9%9F%E4%B8%8A%E9%87%8D%E7%8F%BE%E5%B0%88%E6%A1%88%E7%9A%84-Poetry-%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-%E5%9C%A8%E5%B7%B2%E6%9C%89%E7%92%B0%E5%A2%83%E4%B8%8B%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%92%B0%E5%A2%83-%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E5%95%8F%E9%A1%8C-1-Docker%E5%BB%BA%E7%AB%8B%E6%98%A0%E5%83%8F%E6%AA%94%EF%BC%8C-CalledProcessError"><span class="toc-number"></span> <span class="toc-text">How (以下請針對主題詳細描述如何處理，圖文並茂)  - 環境部屬      1. 安裝Poetry的兩種方式      2. 設定PATH      3. 初始化 Poetry 專案      4. 管理 Poetry 虛擬環境      5. 修改config，建立專案內的.venv虛擬環境      6. 以指令建立虛擬環境      7. 啟動與退出虛擬環境  - 常用指令教學      1. Poetry 新增套件      2. 列出全部套件清單      3. Poetry 移除套件      4. 輸出 Poetry 虛擬環境的 requirements.txt  - Poetry 常用指令清單  - 在別台主機上重現專案的 Poetry 虛擬環境  - 在已有環境下快速建立新環境  - 可能遇到問題      1. Docker建立映像檔，[CalledProcessError]
+  </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%92%B0%E5%A2%83%E9%83%A8%E5%B1%AC-to-the-top"><span class="toc-number"></span> <span class="toc-text">環境部屬**(to the top)**</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4-to-the-top"><span class="toc-number"></span> <span class="toc-text">常用指令**(to the top)**</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Poetry-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E6%B8%85%E5%96%AE-to-the-top"><span class="toc-number"></span> <span class="toc-text">Poetry 常用指令清單(to the top)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Poetry-%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E4%B8%BB%E8%A6%81%E6%9C%89%E4%B8%8B%E9%9D%A2%E5%B9%BE%E5%80%8B%EF%BC%9A-poetry-add-poetry-remove-poetry-export-poetry-env-use-poetry-shell-poetry-show-poetry-init-poetry-install-poetry-update-package"><span class="toc-number"></span> <span class="toc-text">  Poetry 的常用指令主要有下面幾個：  - poetry add  - poetry remove  - poetry export  - poetry env use  - poetry shell  - poetry show  - poetry init  - poetry install  - poetry update package
+  </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8%E5%88%A5%E5%8F%B0%E4%B8%BB%E6%A9%9F%E4%B8%8A%E9%87%8D%E7%8F%BE%E5%B0%88%E6%A1%88%E7%9A%84-Poetry-%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-to-the-top"><span class="toc-number"></span> <span class="toc-text">在別台主機上重現專案的 Poetry 虛擬環境(to the top)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%99%E4%B9%9F%E6%98%AF%E9%9D%9E%E5%B8%B8%E5%B8%B8%E8%A6%8B%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82-%E7%AC%AC%E4%B8%80%E6%AD%A5%E7%95%B6%E7%84%B6%E6%98%AF-git-clone%E5%B0%88%E6%A1%88%EF%BC%8C%E6%AD%A4%E6%99%82%E5%B0%88%E6%A1%88%E4%B8%AD%E5%B7%B2%E7%B6%93%E6%9C%89-Poetry-%E6%89%80%E9%9C%80%E7%9A%84%E5%BF%85%E8%A6%81%E8%B3%87%E8%A8%8A%E4%BA%86%E2%80%94%E2%80%94%E4%B9%9F%E5%B0%B1%E6%98%AFpyproject-toml%E5%92%8Cpoetry-lock-%E3%80%82-%E4%BD%A0%E9%82%84%E7%BC%BA%E5%B0%91%E7%9A%84%E5%83%85%E5%83%85%E6%98%AF%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E3%80%82%E5%A6%82%E6%9E%9C%E6%98%AF%E5%85%A8%E6%96%B0%E7%9A%84%E4%B8%BB%E6%A9%9F%EF%BC%8C%E5%89%87%E9%82%84%E5%BE%97%E5%85%88%E5%AE%89%E8%A3%9D%E3%80%81%E8%A8%AD%E5%AE%9A%E5%A5%BD-Poetry%E3%80%82-%E7%A2%BA%E5%AE%9A-Poetry-%E5%8F%AF%E6%AD%A3%E5%B8%B8%E4%BD%BF%E7%94%A8%E5%BE%8C%EF%BC%8C%E7%A7%BB%E8%87%B3%E5%B0%88%E6%A1%88%E7%9B%AE%E9%8C%84%E5%BA%95%E4%B8%8B%EF%BC%8C%E4%BE%9D%E5%BA%8F%E5%9F%B7%E8%A1%8C%E6%8C%87%E4%BB%A4%EF%BC%9A-1-poetry-env-use-python%EF%BC%9A%E5%BB%BA%E7%AB%8B%E5%B0%88%E6%A1%88%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E4%B8%A6%E4%BD%BF%E7%94%A8%E3%80%82%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%87%B6%E5%BE%97%E6%89%93%E9%80%99%E9%BA%BC%E9%95%B7%E7%9A%84%E6%8C%87%E4%BB%A4%EF%BC%8C%E7%9B%B4%E6%8E%A5poetry-shell%E4%B9%9F%E6%98%AF%E5%8F%AF%E4%BB%A5%E3%80%82%E6%AD%A4%E6%99%82%E6%88%91%E5%80%91%E6%9C%83%E6%9C%89%E4%B8%80%E5%80%8B%E3%80%8C%E7%A9%BA%E7%9A%84%E3%80%8D%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E3%80%82-2-poetry-install%EF%BC%9A%E5%9B%A0%E7%82%BA%E6%98%AF%E8%88%8A%E5%B0%88%E6%A1%88%EF%BC%8C%E4%B8%8D%E9%9C%80%E8%A6%81init%EF%BC%8C%E6%9C%83%E7%9B%B4%E6%8E%A5%E4%BE%9Dpoetry-lock%E8%A8%98%E8%BC%89%E7%9A%84%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%9D%E5%88%B0%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83%E4%B8%AD%EF%BC%81%E9%A1%9E%E4%BC%BCnpm-install-%E3%80%82"><span class="toc-number"></span> <span class="toc-text">  這也是非常常見的需求。  第一步當然是**git clone專案，此時專案中已經有 Poetry 所需的必要資訊了——也就是pyproject.toml和poetry.lock**。  你還缺少的僅僅是虛擬環境。如果是全新的主機，則還得先安裝、設定好 Poetry。  確定 Poetry 可正常使用後，移至專案目錄底下，依序執行指令：  1. poetry env use python：建立專案虛擬環境並使用。如果你懶得打這麼長的指令，直接poetry shell也是可以。此時我們會有一個「空的」虛擬環境。  2. **poetry install：因為是舊專案，不需要init，會直接依poetry.lock記載的套件版本安裝到虛擬環境中！類似npm install**。
+  </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8%E5%B7%B2%E6%9C%89%E7%92%B0%E5%A2%83%E4%B8%8B%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%92%B0%E5%A2%83-to-the-top"><span class="toc-number"></span> <span class="toc-text">在已有環境下快速建立新環境**(to the top)**</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E5%95%8F%E9%A1%8C-to-the-top"><span class="toc-number"></span> <span class="toc-text">可能遇到問題**(to the top)**</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/di-yi-pian-wen-zhang/" title="第一篇文章">第一篇文章</a><time datetime="2024-03-20T09:07:43.000Z" title="發表於 2024-03-20 17:07:43">2024-03-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/hello-world/" title="Hello World">Hello World</a><time datetime="2024-03-07T11:52:55.107Z" title="發表於 2024-03-07 19:52:55">2024-03-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Weirou Sun</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="返回頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
